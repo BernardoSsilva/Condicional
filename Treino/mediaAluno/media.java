@@ -2,6 +2,8 @@ package mediaAluno;
 
 import java.util.Scanner;
 
+import javax.print.event.PrintEvent;
+
 public class media {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -19,6 +21,7 @@ public class media {
             System.out.print("O aluno "+nome+" foi para recuperação");
             System.out.printf(", com media %.1f",media);
             System.out.println(" ");
+            System.out.println("O Aluno precisa tirar 6 na recuperação para ser aprovado");
              System.out.print("Digite a nota da recuperação: ");
             float notaRec = scan.nextFloat();
             if (notaRec >= 6){
